@@ -6,41 +6,31 @@ import HeroDesktop from "../assest/images/homepage/hero-bg-desktop-clip.jpg";
 import HeroTablet from "../assest/images/homepage/hero-bg-tablet-clip.jpg";
 import HeroMobile from "../assest/images/homepage/hero-bg-mobile-clip.jpg";
 import Logo from "../assest/images/logo.svg";
+import EnjoyablePlaceDesktop from "../assest/images/homepage/enjoyable-place-desktop.jpg";
+import EnjoyablePlaceTablet from "../assest/images/homepage/enjoyable-place-tablet.jpg";
+import EnjoyablePlaceMobile from "../assest/images/homepage/enjoyable-place-mobile.jpg";
+import PatternDivider from "../assest/images/patterns/pattern-divide.svg";
+import PatternCurveTopRight from "../assest/images/patterns/pattern-curve-top-right.svg";
 ---
 
 <Layout title="Dine Website Challenge.">
   <main>
     <!-- Hero Section -->
-    <section class="flex flex-col lg:flex-row-reverse">
-      <Image
-        src={HeroDesktop}
-        alt="Fine dining restaurant"
-        class:list={"hidden md:hidden lg:block"}
-      />
-      <Image
-        src={HeroTablet}
-        alt="Fine dining restaurant"
-        class:list={"hidden md:block lg:hidden"}
-      />
-      <Image
-        src={HeroMobile}
-        alt="Fine dining restaurant"
-        class:list={"md:max-2xl:hidden"}
-      />
+    <section class="flex flex-col-reverse bg-[#111111] xl:flex-row">
       <div
-        class="flex flex-col items-center justify-center gap-10 bg-[#111111] pb-[9.5rem] md:gap-[2.37rem] md:pb-[13.5rem] lg:relative lg:left-[6.75rem] lg:items-start lg:gap-[9.56rem] lg:pl-[10.31rem] lg:pt-[4.06rem]"
+        class="flex flex-col items-center justify-center gap-10 bg-[#111111] pb-[9.5rem] md:gap-[2.37rem] md:pb-[13.5rem] xl:relative xl:left-[-0.25rem] xl:w-[34.5rem] xl:items-start xl:gap-[9.56rem] xl:pl-[10.31rem] xl:pt-[4.06rem]"
       >
         <Image src={Logo} alt="Dine Logo" />
         <div
-          class="flex flex-col items-center justify-center gap-[1.31rem] text-center md:gap-5 lg:items-start lg:text-left"
+          class="flex flex-col items-center justify-center gap-[1.31rem] text-center md:gap-5 xl:items-start xl:text-left"
         >
           <h1
-            class="w-[16.4375rem] text-[2rem] font-light leading-10 tracking-[-0.025rem] text-white md:w-[24.0625rem] md:text-5xl md:leading-[4rem] md:tracking-[-0.0375rem] lg:w-[31.0625rem] lg:text-[5rem] lg:leading-[5rem] lg:tracking-[-0.0625rem]"
+            class="w-[16.4375rem] text-[2rem] font-light leading-10 tracking-[-0.025rem] text-white md:w-[24.0625rem] md:text-5xl md:leading-[4rem] md:tracking-[-0.0375rem] xl:w-[31.0625rem] xl:text-[5rem] xl:leading-[5rem] xl:tracking-[-0.0625rem]"
           >
             Exquisite dining since 1989
           </h1>
           <p
-            class="w-[20.4375rem] text-base font-normal leading-relaxed text-white md:w-[35.8125rem] md:text-xl md:leading-[1.875rem] lg:w-[27.8125rem]"
+            class="w-[20.4375rem] text-base font-normal leading-relaxed text-white md:w-[35.8125rem] md:text-xl md:leading-[1.875rem] xl:w-[27.8125rem]"
           >
             Experience our seasonal menu in beautiful country surroundings. Eat
             the freshest produce from the comfort of our farmhouse.
@@ -48,11 +38,66 @@ import Logo from "../assest/images/logo.svg";
         </div>
         <a
           href="/booking"
-          class="mt-[0.81rem] flex h-16 w-[15.3125rem] cursor-pointer items-center justify-center border border-white text-[1.0625rem] font-semibold leading-4 tracking-[0.15625rem] text-white transition-colors duration-300 ease-in-out hover:border-none hover:bg-white hover:text-[#111111] md:mt-[0.88rem] lg:mt-[-7.06rem]"
+          class="mt-[0.81rem] flex h-16 w-[15.3125rem] cursor-pointer items-center justify-center border border-white text-[1.0625rem] font-semibold leading-4 tracking-[0.15625rem] text-white transition-colors duration-300 ease-in-out hover:border-none hover:bg-white hover:text-[#111111] md:mt-[0.88rem] xl:mt-[-7.06rem]"
         >
           Book a table
         </a>
       </div>
+      <Image
+        src={HeroDesktop}
+        alt="Fine dining restaurant"
+        class:list={"hidden md:hidden xl:block"}
+      />
+      <Image
+        src={HeroTablet}
+        alt="Fine dining restaurant"
+        class:list={"hidden md:block xl:hidden"}
+      />
+      <Image
+        src={HeroMobile}
+        alt="Fine dining restaurant"
+        class:list={"md:max-2xl:hidden"}
+      />
+    </section>
+    <!-- Enjoyable Place Section-->
+    <section
+      class="mx-6 flex flex-col-reverse md:mx-[6.06rem] xl:mx-[10.31rem] xl:flex-row-reverse xl:justify-between xl:gap-32"
+    >
+      <div
+        class="flex flex-col items-center justify-center gap-10 md:gap-[2.44rem] xl:items-start xl:gap-[3.44rem]"
+      >
+        <Image src={PatternDivider} alt="Enjoyable Place For All The Family" />
+        <div
+          class="flex flex-col items-center justify-center gap-[0.81rem] text-center md:gap-[1.69rem] xl:items-start xl:text-left"
+        >
+          <h2
+            class="w-[15.4375rem] text-[2rem] font-bold leading-10 tracking-[-0.025rem] text-[#242B37] md:w-[23.5625rem] md:text-[3rem] md:leading-[3rem] md:tracking-[-0.03125rem]"
+          >
+            Enjoyable place for all the family
+          </h2>
+          <p
+            class="w-[20.4375rem] text-base font-normal leading-relaxed text-[#242B37] md:w-[28.4375rem] md:text-xl md:leading-[1.875rem]"
+          >
+            Our relaxed surroundings make dining with us a great experience for
+            everyone. We can even arrange a tour of the farm before your meal.
+          </p>
+        </div>
+      </div>
+      <Image
+        src={EnjoyablePlaceDesktop}
+        alt="Enjoyable Place For All The Family"
+        class:list={"relative -top-20 hidden drop-shadow-xl md:hidden xl:block"}
+      />
+      <Image
+        src={EnjoyablePlaceTablet}
+        alt="Enjoyable Place For All The Family"
+        class:list={"relative -top-24 hidden drop-shadow-xl md:block xl:hidden"}
+      />
+      <Image
+        src={EnjoyablePlaceMobile}
+        alt="Enjoyable Place For All The Family"
+        class:list={"relative -top-14 drop-shadow-xl md:max-2xl:hidden"}
+      />
     </section>
   </main>
 </Layout>
